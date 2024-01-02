@@ -1,4 +1,4 @@
-var password=document.getElementById("password");
+const password = document.getElementById("password");
 
  function genPassword() {
     var chars = "0123456789abcdefghijklmnopqrstuvwxyzåäö!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ";
@@ -12,7 +12,8 @@ var password=document.getElementById("password");
  }
 
 function copyPassword() {
-  var copyText = document.getElementById("password");
+  const copyText = document.getElementById("password");
   copyText.select();
   document.execCommand("copy");  
 }
+ // Change to crypto instead of Math.rand later on
