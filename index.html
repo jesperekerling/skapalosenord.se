@@ -8,24 +8,24 @@
 </head>
 <body class="bg-slate-100" onload="genPassword()">
 
-    <header class="container mx-auto p-10 bg-slate-500">
+    <header class="mx-auto p-10 bg-slate-800 text-center">
         <h1 class="text-4xl text-white pb-4 font-bold"><a href="/">Skapa lösenord</a></h1>
-        <p class="font-semibold"><a href="/">skapalosenord.se</a></p>
+        <p class="font-semibold text-blue-200"><a href="/">skapalosenord.se</a></p>
     </header>
     
-    <main class="container mx-auto md:p-10 p-4">
-        <h2 class="text-center p-8 font-semibold">Skapa ett säkert lösenord</h2>
+    <main class="container mx-auto md:p-10 p-4 max-w-3xl">
+        <h2 class="text-center p-8 font-semibold md:text-xl">Skapa ett säkert lösenord</h2>
         <div class="w-full flex">
             <div class="w-2/3 inline-flex pr-3">
-                <input type="text" name="" placeholder="Skapa lösenord" id="password" readonly class="py-3 text-center w-full">
+                <input type="text" name="" placeholder="Skapa lösenord" id="password" readonly class="py-3 text-center w-full text-2xl rounded-md">
             </div>
             <div class="w-1/3 inline-flex">
-                <button id="button2" class="btn2 bg-green-700 text-white py-3 w-full font-bold" onclick="copyPassword()">Kopiera lösenordet</a></button>
+                <button id="button2" class="btn2 bg-green-700 text-white py-3 w-full font-bold rounded-md" onclick="copyPassword()">Kopiera lösenordet</a></button>
             </div>
         </div>
         
-        <button id="button" class="btn1 block bg-black text-white px-6 py-5 w-full font-bold mt-3" onclick="genPassword()">Skapa nytt lösenord</button>
-        <p class="p-8 mt-5">Ladda om sidan för att skapa ett nytt lösenord.</p>
+        <button id="button" class="btn1 block bg-black text-white px-6 py-5 w-full font-bold mt-3 rounded-md" onclick="genPassword()">Skapa nytt lösenord</button>
+        <p class="p-8 mt-5 text-center">Ladda om sidan för att skapa ett nytt lösenord.</p>
 
         <h3 class="text-2xl pt-8 pb-4 px-8 font-bold">Hur skapas lösenorden?</h3>
         <p class="px-8">Lösenorden skapas med kodspråket JavaScript, genom att slumpa bokstäver och tecken. Det lösenord som genereras skapas lokal i din webbläsare. Så får aldrig tillgång till ditt skapade lösenord. Utan det visas endast för dig.</p>
