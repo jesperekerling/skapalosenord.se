@@ -11,3 +11,4 @@ main a:link, main a:visited {
 main a:hover, footer a:hover {
     color: rgb(29 78 216);
 }
+.bg-green-700 { background-color: #2f855a; }
